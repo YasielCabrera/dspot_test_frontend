@@ -1,0 +1,12 @@
+@import 'variables.scss';
+@import "normalize.css/normalize";
+
+
+body {
+    font-family: $font-inter;
+    font-weight: 500;
+
+    background-color: $body-bg;
+    color: $body-color;
+}
+

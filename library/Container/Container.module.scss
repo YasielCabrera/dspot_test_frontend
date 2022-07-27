@@ -1,0 +1,9 @@
+@import '../../styles/variables';
+
+.container {
+  max-width: 714px;
+  margin: 2rem auto;
+  border-radius: $border-radius;
+  background-color: rgba(255, 255, 255, 0.5);
+  padding: 40px;
+}

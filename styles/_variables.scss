@@ -1,0 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap');
+
+$primary: #2e57fa;
+$secondary: #b1b9db;
+
+$green-color: #16ba44;
+
+$body-color: #000000;
+$body-bg: #E5E5E5;
+
+$border-radius: 8px;
+$border-radius-sm: 4px;
+
+$font-inter: Inter, -apple-system, system-ui, BlinkMacSystemFont, 'Segoe UI',
+  Roboto, 'Helvetica Neue', Arial, sans-serif;
+
+$font-weight-normal: 500;
+
+// skeletons
+//   $skeleton-color: rgba(237, 242, 249, 0.96);
+//   $skeleton-color-5: darken($skeleton-color, 5%);
+//   $skeleton-block-radius: 6px;
+//   $skeleton-text-radius: 4px;
+//   $skeleton-text-height: 1.4rem;
+
+//   @import '~bootstrap/scss/functions';
+//   @import '~bootstrap/scss/variables';
+//   @import '~bootstrap/scss/mixins';
+//   @import '~bootstrap/scss/utilities';
