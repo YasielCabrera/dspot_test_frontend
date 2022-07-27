@@ -1,0 +1,40 @@
+@import '../../styles/variables';
+
+.friendCard {
+}
+
+.content {
+  display: flex;
+  justify-content: space-between;
+  padding: 14px;
+}
+
+.flex {
+  display: flex;
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-left: 14px;
+  padding: 4px 0;
+}
+
+.name {
+}
+
+.status {
+  display: inline-block;
+  color: $secondary;
+  border: 1px solid $secondary;
+  border-radius: 20px;
+  font-size: 12px;
+  line-height: 24px;
+  padding: 0 8px;
+}
+
+.action {
+  display: flex;
+  align-items: center;
+}

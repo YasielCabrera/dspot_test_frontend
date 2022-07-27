@@ -1,0 +1,40 @@
+@import '../../styles/variables';
+
+.avatar {
+  position: relative;
+  display: inline-block;
+  letter-spacing: 0;
+  word-spacing: 0;
+  font-size: 0;
+
+  img {
+    border-radius: $border-radius-sm;
+  }
+}
+
+.availabilityWrapper {
+  position: absolute;
+  top: -3px;
+  left: -4px;
+  //   TODO: add alignment for lg size
+}
+
+.availability {
+  border-radius: 50%;
+}
+
+.sm {
+  width: 8px;
+  height: 8px;
+  border: 2px solid white;
+}
+
+.lg {
+  width: 15px;
+  height: 15px;
+  border: 4px solid white;
+}
+
+.available {
+  background-color: $green-color;
+}

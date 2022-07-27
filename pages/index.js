@@ -1,7 +1,8 @@
 import Head from 'next/head'
-import Button from '../library/Button'
-
+import FriendList from '../components/Friends/List'
 import { useGetAllProfilesQuery } from '../services/profiles'
+
+import styles from '../styles/pages/index.module.scss'
 
 export default function Home() {
   const { data, error, isLoading } = useGetAllProfilesQuery()
@@ -15,27 +16,16 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <h1>Friends</h1>
+      <h1 className={styles.header}>Friends</h1>
 
       <div>
-        <Button>Hello world</Button>
-        <div>
-          {isLoading ? (
-            'loading'
-          ) : error ? (
-            <div>{error}</div>
-          ) : (
-            <div>
-              {data?.map((profile) => (
-                <div key={profile.id}>
-                  <div>
-                    {profile.first_name} {profile.last_name}
-                  </div>
-                </div>
-              ))}
-            </div>
-          )}
-        </div>
+        {isLoading ? (
+          'loading'
+        ) : error ? (
+          <div>{error}</div>
+        ) : (
+          <FriendList friends={data} />
+        )}
       </div>
     </div>
   )
