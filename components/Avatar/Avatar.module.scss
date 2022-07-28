@@ -14,13 +14,18 @@
 
 .availabilityWrapper {
   position: absolute;
+
   top: -3px;
   left: -4px;
-  //   TODO: add alignment for lg size
+}
+.x2 {
+  top: -9px;
+  left: -9px;
 }
 
 .availability {
   border-radius: 50%;
+  background-color: $secondary;
 }
 
 .sm {

@@ -8,7 +8,10 @@ function Avatar({ image, alt, available = false, size = 'sm' }) {
   return (
     <div className={styles.avatar}>
       <Image src={image} alt={alt} width={imageSize} height={imageSize} />
-      <div className={styles.availabilityWrapper}>
+      <div
+        className={`${styles.availabilityWrapper} ${
+          size != 'sm' ? styles.x2 : ''
+        }`}>
         <div
           className={`${styles.availability} ${
             size == 'sm' ? styles.sm : styles.lg

@@ -1,6 +1,7 @@
 @import '../../styles/variables';
 
 .friendCard {
+  margin-bottom: 14px;
 }
 
 .content {
@@ -19,19 +20,6 @@
   justify-content: space-between;
   margin-left: 14px;
   padding: 4px 0;
-}
-
-.name {
-}
-
-.status {
-  display: inline-block;
-  color: $secondary;
-  border: 1px solid $secondary;
-  border-radius: 20px;
-  font-size: 12px;
-  line-height: 24px;
-  padding: 0 8px;
 }
 
 .action {

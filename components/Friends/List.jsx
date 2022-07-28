@@ -10,6 +10,7 @@ function FriendList({ friends = [] }) {
           id={friend.id}
           image={friend.img}
           name={`${friend.first_name} ${friend.last_name}`}
+          available={friend.available}
           status={friend.statuses.length > 0 ? friend.statuses[0] : ''}
         />
       ))}
@@ -24,6 +25,7 @@ FriendList.propTypes = {
       img: PropTypes.string.isRequired,
       first_name: PropTypes.string.isRequired,
       last_name: PropTypes.string.isRequired,
+      available: PropTypes.bool.isRequired,
       statuses: PropTypes.arrayOf(PropTypes.string),
     })
   ).isRequired,

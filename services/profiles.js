@@ -7,7 +7,10 @@ export const profilesApi = createApi({
     getAllProfiles: builder.query({
       query: () => `profile/`,
     }),
+    getProfile: builder.query({
+      query: (id) => `profile/${id}`,
+    }),
   }),
 })
 
-export const { useGetAllProfilesQuery } = profilesApi
+export const { useGetAllProfilesQuery, useGetProfileQuery } = profilesApi
