@@ -1,8 +1,8 @@
-export function pick_random_status(profile) {
-  if (profile?.statuses?.length > 0) {
-    let size = profile?.statuses?.length
-    let index = Math.floor(Math.random() * (size + 1))
-    return profile.statuses[index]
+export function pick_random_status(statuses) {
+  if (statuses?.length > 0) {
+    let size = statuses?.length
+    let index = Math.floor(Math.random() * size)
+    return statuses[index]
   }
   return ' '
 }

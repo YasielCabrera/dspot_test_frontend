@@ -8,6 +8,7 @@ import Tabs from '../../components/Tabs'
 import InfoContent from '../../components/InfoContent'
 
 import styles from '../../styles/pages/profile.module.scss'
+import ProfileGallery from '../../components/ProfileGallery'
 
 export default function ProfileDetails() {
   const router = useRouter()
@@ -39,9 +40,11 @@ export default function ProfileDetails() {
               />
             </div>
             <div className={styles.name}>
-              {profile?.first_name} {profile?.lastName}
+              {profile?.first_name} {profile?.last_name}
             </div>
-            <ProfileStatus text={pick_random_status(profile)} />
+            {profile?.statuses?.length > 0 ? (
+              <ProfileStatus text={pick_random_status(profile?.statuses)} />
+            ) : null}
 
             <div>
               <Tabs
@@ -50,7 +53,10 @@ export default function ProfileDetails() {
                     title: 'Info',
                     content: <InfoContent profile={profile} />,
                   },
-                  { title: 'Photos', content: <div>photos</div> },
+                  {
+                    title: 'Photos',
+                    content: <ProfileGallery photos={profile?.photos} />,
+                  },
                 ]}
               />
             </div>
